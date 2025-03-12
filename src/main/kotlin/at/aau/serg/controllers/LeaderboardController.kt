@@ -17,9 +17,9 @@ class LeaderboardController(
         //gameResultService.getGameResults().sortedWith(compareBy({ -it.score }, { it.id }))
 
         // new sorting_by_time
-        //gameResultService.getGameResults().sortedWith(compareBy({ -it.score }, { it.timeInSeconds }))
+        gameResultService.getGameResults().sortedWith(compareBy({ -it.score }, { it.timeInSeconds }))
 
         // new sorting_by_time_2
-        gameResultService.getGameResults().sortedWith(compareBy({ it.timeInSeconds }, { -it.score }))
+        //gameResultService.getGameResults().sortedWith(compareBy({ it.timeInSeconds }, { -it.score }))
 
 }
