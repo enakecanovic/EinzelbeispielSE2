@@ -19,7 +19,7 @@ class LeaderboardControllerTests {
         mockedService = mock<GameResultService>()
         controller = LeaderboardController(mockedService)
     }
-/*
+
  @Test
     fun test_getLeaderboard_correctScoreSorting() {
         val first = GameResult(1, "first", 20, 20.0) //highest score
@@ -35,9 +35,9 @@ class LeaderboardControllerTests {
         assertEquals(first, res[0]) //highest score 1s
         assertEquals(second, res[1]) //2nd highest score
         assertEquals(third, res[2]) //lowest score
-    }*/
+    }
 
-   @Test
+/* @Test
     fun test_getLeaderboard_correctScoreSorting() {
         val first = GameResult(1, "first", 20, 5.0) //fastest score
         val second = GameResult(2, "second", 20,10.0)//2nd score
@@ -52,8 +52,8 @@ class LeaderboardControllerTests {
         assertEquals(first, res[0]) //highest score 1st
         assertEquals(second, res[1]) //2nd highest score
         assertEquals(third, res[2]) //lowest score
-    }
-/*
+    } */
+
     @Test
     fun test_getLeaderboard_sameScore_CorrectTimeSorting() {
         val first = GameResult(1, "first", 20, 10.0)
@@ -69,8 +69,8 @@ class LeaderboardControllerTests {
         assertEquals(first, res[0])
         assertEquals(second, res[1])
         assertEquals(third, res[2])
-    }*/
-   @Test
+    }
+/* @Test
     fun test_getLeaderboard_sameScore_CorrectTimeSorting() {
         val fastest=GameResult(1, "fastest",20,10.0) //best time
         val second = GameResult(2, "second", 20, 15.0) //2nd best time
@@ -85,5 +85,5 @@ class LeaderboardControllerTests {
         assertEquals(fastest, res[0])
         assertEquals(second, res[1])
         assertEquals(slowest, res[2])
-    }
+    }*/
 }
